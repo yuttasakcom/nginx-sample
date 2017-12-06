@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: .
+    image: yuttasakcom/nginx:1.0
+    container_name: nginx
+    ports:
+      - "80:80"
+    restart: always
