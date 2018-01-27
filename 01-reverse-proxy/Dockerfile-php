@@ -1,0 +1,3 @@
+FROM php:7.1.8-fpm
+
+COPY src/index.php /var/www/html/index.php

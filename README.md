@@ -1,1 +1,1 @@
-## Nginx Sample
+# Nginx Sample
