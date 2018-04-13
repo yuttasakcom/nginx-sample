@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    image: nginx:1.13.12
+    ports:
+      - "80:80"
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - ./public/index.html:/var/www/html/index.html
+      - ./public/images:/data/images
+    restart: always
