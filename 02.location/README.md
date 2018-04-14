@@ -1,10 +1,13 @@
 # Location Directive
 
 ```
+Context:	server, location
+==============================================================
 Syntax:	location [ = | ~ | ~* | ^~ ] uri { ... }
 location @name { ... }
 Default:	—
 Context:	server, location
+==============================================================
 Sets configuration depending on a request URI.
 
 The matching is performed against a normalized URI, after decoding the text encoded in the “%XX” form, resolving references to relative path components “.” and “..”, and possible compression of two or more adjacent slashes into a single slash.
