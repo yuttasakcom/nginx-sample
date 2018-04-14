@@ -1,7 +1,6 @@
 # Location Directive
 
 ```
-Context:	server, location
 ==============================================================
 Syntax:	location [ = | ~ | ~* | ^~ ] uri { ... }
 location @name { ... }
