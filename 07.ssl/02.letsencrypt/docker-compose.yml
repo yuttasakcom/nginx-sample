@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    image: nginx:1.13.12
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+      - /var/cache/nginx:/var/cache/nginx
+      - /etc/letsencrypt/live/example.com/fullchain.pem:/etc/letsencrypt/live/example.com/fullchain.pem
+      - /etc/letsencrypt/live/example.com/privkey.pem:/etc/letsencrypt/live/example.com/privkey.pem
+
+    restart: always
+
+  web:
+    image: nginx:1.13.12
+    volumes:
+      - ./web/conf.d:/etc/nginx/conf.d
+      - ./web/html:/var/www/html
+      - ./web/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
