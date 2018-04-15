@@ -28,4 +28,4 @@ $ curl localhost -H 'Host: example.com'
 ## Summary
 
 * ควรแยก config site แต่ละ site เป็น 1 config file เก็บไว้ใน conf/site/
-* include conf/site/\*; เข้าไปที่ file nginx.conf
+* แก้ไข nginx.conf จาก include /etc/nginx/conf.d/\*.conf; เป็น include conf/site/\*;
