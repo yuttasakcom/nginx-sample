@@ -27,18 +27,18 @@ $ service nginx start|stop|restart # สั่งงาน nginx ผ่าน se
 ยกตัวอย่างแค่ http, server, upstream
 ===== http ================================
 Syntax:	http { ... } # ตัวอย่างการประกาศใช้งาน
-Default:	— # ไม่มีการกำหนดค่า default
-Context:	main # เป็น main directive ไม่อยู่ภายใต้ใคร
+Default: — # ไม่มีการกำหนดค่า default
+Context: main # เป็น main directive ไม่อยู่ภายใต้ใคร
 
 ===== server ==============================
 Syntax:	server { ... } # ตัวอย่างการประกาศใช้งาน
-Default:	— # ไม่มีการกำหนดค่า default
-Context:	http # อยู่ภายใต้ http เช่น http { server { ... } }
+Default: — # ไม่มีการกำหนดค่า default
+Context: http # อยู่ภายใต้ http เช่น http { server { ... } }
 
 ===== upstream ============================
 Syntax:	upstream name { ... } # ตัวอย่างการประกาศใช้งาน
-Default:	— # ไม่มีการกำหนดค่า default
-Context:	http # อยู่ภายใต้ http เช่น http { upstream name { ... } }
+Default: — # ไม่มีการกำหนดค่า default
+Context: http # อยู่ภายใต้ http เช่น http { upstream name { ... } }
 ```
 
 ## Nginx Site
