@@ -2,6 +2,8 @@
 
 ## Table of Content
 
+* [Useful Command](#useful-command)
+* [Directives](#directives)
 * [Nginx Site](#nginx-site)
 * [Location](https://github.com/yuttasakcom/nginx-sample/tree/master/02.location)
 * Reverse Proxy
@@ -9,6 +11,35 @@
 * Caching
 * Ratelimit
 * SSL
+
+## Useful Command
+
+```bash
+$ nginx -s stop # หยุดการทำงาน nginx
+$ nginx -s reload # ใช้เมื่อมีการแก้ไข config ของ nginx
+$ nginx -t # ตรวจสอบค่า config nginx ก่อนสั่ง reload
+$ service nginx start|stop|restart # สั่งงาน nginx ผ่าน service
+```
+
+## Directives
+
+```
+ยกตัวอย่างแค่ http, server, upstream
+===== http ================================
+Syntax:	http { ... } # ตัวอย่างการประกาศใช้งาน
+Default:	— # ไม่มีการกำหนดค่า default
+Context:	main # เป็น main directive ไม่อยู่ภายใต้ใคร
+
+===== server ==============================
+Syntax:	server { ... } # ตัวอย่างการประกาศใช้งาน
+Default:	— # ไม่มีการกำหนดค่า default
+Context:	http # อยู่ภายใต้ http เช่น http { server { ... } }
+
+===== upstream ============================
+Syntax:	upstream name { ... } # ตัวอย่างการประกาศใช้งาน
+Default:	— # ไม่มีการกำหนดค่า default
+Context:	http # อยู่ภายใต้ http เช่น http { upstream name { ... } }
+```
 
 ## Nginx Site
 
