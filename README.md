@@ -2,6 +2,7 @@
 
 ## Table of Content
 
+* [Install](#install)
 * [Useful Command](#useful-command)
 * [Directives](#directives)
 * [Nginx Site](#nginx-site)
@@ -11,6 +12,19 @@
 * Caching
 * Ratelimit
 * SSL
+
+## Install
+
+### Ubuntu
+
+```bash
+$ sudo apt update && sudo apt dist-upgrade && sudo apt autoremove
+$ cd /tmp/ && wget http://nginx.org/keys/nginx_signing.key
+$ sudo apt-key add nginx_signing.key
+$ sudo sh -c "echo 'deb http://nginx.org/packages/mainline/ubuntu/ '$(lsb_release -cs)' nginx' > /etc/apt/sources.list.d/nginx.list"
+$ sudo apt update
+$ sudo apt install nginx
+```
 
 ## Useful Command
 

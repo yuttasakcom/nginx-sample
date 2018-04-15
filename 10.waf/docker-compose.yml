@@ -4,7 +4,7 @@ services:
 
   nginx:
     build: .
-    image: yuttasakcom/mynginx:1.0.0
+    image: yuttasakcom/nginx-waf:1.0.0
     ports:
       - "80:80"
     restart: always

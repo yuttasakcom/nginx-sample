@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    build: .
+    image: yuttasakcom/nginx:1.13.12
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./conf:/etc/nginx/conf
+    restart: always
