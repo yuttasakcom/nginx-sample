@@ -23,6 +23,8 @@ $ service nginx start|stop|restart # สั่งงาน nginx ผ่าน se
 
 ## Directives
 
+> https://nginx.org/en/docs/
+
 ```
 ยกตัวอย่างแค่ http, server, upstream
 ===== http ================================
