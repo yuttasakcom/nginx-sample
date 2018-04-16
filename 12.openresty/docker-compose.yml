@@ -1,0 +1,36 @@
+version: '3.5'
+
+services:
+
+  openresty:
+    image: openresty/openresty:alpine
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    restart: always
+
+  web1:
+    image: nginx:1.13.12
+    volumes:
+      - ./web1/conf.d:/etc/nginx/conf.d
+      - ./web1/html:/var/www/html
+      - ./web1/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
+
+  web2:
+    image: nginx:1.13.12
+    volumes:
+      - ./web2/conf.d:/etc/nginx/conf.d
+      - ./web2/html:/var/www/html
+      - ./web2/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
+
+  web3:
+    image: nginx:1.13.12
+    volumes:
+      - ./web3/conf.d:/etc/nginx/conf.d
+      - ./web3/html:/var/www/html
+      - ./web3/nginx.conf:/etc/nginx/nginx.conf
+    restart: always
