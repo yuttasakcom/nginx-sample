@@ -1,0 +1,14 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    build: .
+    image: yuttasakcom/nginx-lua:1.0.0
+    volumes:
+      - ./conf/nginx.conf:/nginx/conf/nginx.conf
+      - ./conf/site:/nginx/conf/site
+      - ./public:/var/www/html
+    ports:
+      - "80:80"
+    restart: always
