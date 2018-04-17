@@ -30,8 +30,8 @@
   * [Static](https://github.com/yuttasakcom/nginx-sample/tree/master/09.modules/01.static)
   * [Dynamic](https://github.com/yuttasakcom/nginx-sample/tree/master/09.modules/02.dynamic)
 * [WAF](https://github.com/yuttasakcom/nginx-sample/tree/master/10.waf)
-  * [Naxsi]()
-  * [Openresty WAF]()
+  * [Naxsi](https://github.com/yuttasakcom/nginx-sample/tree/master/10.waf/01.naxsi)
+  * [Openresty WAF](https://github.com/yuttasakcom/nginx-sample/tree/master/10.waf/02.openresty-waf)
 * [Lua](https://github.com/yuttasakcom/nginx-sample/tree/master/11.lua)
 * [Openresty](https://github.com/yuttasakcom/nginx-sample/tree/master/12.openresty)
 * Monitoring
