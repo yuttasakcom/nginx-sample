@@ -1,8 +1,9 @@
 # Nginx Sample
 
-## Table of Content
+## Table of Contents
 
 * [Install](#install)
+  * [Ubuntu](#ubuntu)
 * [Useful Command](#useful-command)
 * [Directives](#directives)
 * [Nginx Site](#nginx-site)
