@@ -13,7 +13,7 @@ $ docker-compose up -d --build
 ## Test
 
 ```bash
-$ curl -i http://example.com/
+$ curl http://localhost/test/
 ```
 
 ## Issue
