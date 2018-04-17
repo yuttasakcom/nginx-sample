@@ -25,11 +25,11 @@
   * Certbot
 * [Websocket](https://github.com/yuttasakcom/nginx-sample/tree/master/08.websocket)
 * [Modules](https://github.com/yuttasakcom/nginx-sample/tree/master/09.modules)
-  * [Static]()
-  * [Dynamic]()
-* [WAF]()
-* [Lua]()
-* [Openresty]()
+  * [Static](https://github.com/yuttasakcom/nginx-sample/tree/master/09.modules/01.static)
+  * [Dynamic](https://github.com/yuttasakcom/nginx-sample/tree/master/09.modules/02.dynamic)
+* [WAF](https://github.com/yuttasakcom/nginx-sample/tree/master/10.waf)
+* [Lua](https://github.com/yuttasakcom/nginx-sample/tree/master/11.lua)
+* [Openresty](https://github.com/yuttasakcom/nginx-sample/tree/master/12.openresty)
 
 ## Install
 
