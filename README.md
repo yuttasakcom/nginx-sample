@@ -16,6 +16,7 @@
   * [No Cache](https://github.com/yuttasakcom/nginx-sample/tree/master/05.caching/01.no-cache)
   * [Cache Set Expries](https://github.com/yuttasakcom/nginx-sample/tree/master/05.caching/02.cache-time)
   * [Proxy Cache](https://github.com/yuttasakcom/nginx-sample/tree/master/05.caching/03.cache)
+  * Micro Caching
 * [Ratelimit](https://github.com/yuttasakcom/nginx-sample/tree/master/06.ratelimit)
   * [Limit Bandwidth](https://github.com/yuttasakcom/nginx-sample/tree/master/06.ratelimit/01.bandwidth)
   * [Limit Connection](https://github.com/yuttasakcom/nginx-sample/tree/master/06.ratelimit/02.connection)
@@ -31,6 +32,7 @@
 * [WAF](https://github.com/yuttasakcom/nginx-sample/tree/master/10.waf)
 * [Lua](https://github.com/yuttasakcom/nginx-sample/tree/master/11.lua)
 * [Openresty](https://github.com/yuttasakcom/nginx-sample/tree/master/12.openresty)
+* Monitoring
 
 ## Install
 
