@@ -5,9 +5,10 @@ services:
   nginx:
     build: .
     image: yuttasakcom/nginx-waf:1.0.0
-    # volumes:
-    #   - ./nginx.conf:/etc/nginx/nginx.conf
-    #   - ./conf.d:/etc/nginx/conf.d
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./conf.d:/etc/nginx/conf.d
+      - ./public:/var/www/html
     ports:
       - "80:80"
     restart: always
