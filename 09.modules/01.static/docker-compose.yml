@@ -7,7 +7,7 @@ services:
     image: yuttasakcom/nginx:1.13.12
     ports:
       - "80:80"
-    # volumes:
-    #   - ./nginx.conf:/etc/nginx/nginx.conf
-    #   - ./conf:/etc/nginx/conf
+    volumes:
+      - ./conf/nginx.conf:/nginx/conf/nginx.conf
+      - ./conf/site:/nginx/conf/site
     restart: always
