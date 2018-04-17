@@ -12,7 +12,7 @@ services:
     restart: always
 
   web1:
-    image: nginx:1.13.12
+    image: openresty/openresty:alpine
     volumes:
       - ./web1/conf.d:/etc/nginx/conf.d
       - ./web1/html:/var/www/html
@@ -20,7 +20,7 @@ services:
     restart: always
 
   web2:
-    image: nginx:1.13.12
+    image: openresty/openresty:alpine
     volumes:
       - ./web2/conf.d:/etc/nginx/conf.d
       - ./web2/html:/var/www/html
@@ -28,7 +28,7 @@ services:
     restart: always
 
   web3:
-    image: nginx:1.13.12
+    image: openresty/openresty:alpine
     volumes:
       - ./web3/conf.d:/etc/nginx/conf.d
       - ./web3/html:/var/www/html
