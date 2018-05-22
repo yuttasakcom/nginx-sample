@@ -20,6 +20,6 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - ./certs/letsencrypt:/etc/letsencrypt
+      - ./certs/letsencrypt:/etc/letsencrypte
       - ./www/letsencrypt:/var/www/.well-known
     command: certonly --agree-tos --renew-by-default --email yuttasak@hot-now.com --webroot -w /var/www -d example.com
