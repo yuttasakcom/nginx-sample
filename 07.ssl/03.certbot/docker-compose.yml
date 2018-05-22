@@ -1,0 +1,25 @@
+version: '3.5'
+
+services:
+
+  nginx:
+    image: nginx:1.13.12
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/conf:/etc/nginx/conf:ro
+      - ./www:/var/www:ro
+      - ./certs/letsencrypt:/etc/letsencrypt:ro
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    volumes:
+      - ./certs/letsencrypt:/etc/letsencrypt
+      - ./www/letsencrypt:/var/www/.well-known
+    command: certonly --agree-tos --renew-by-default --email yuttasak@hot-now.com --webroot -w /var/www -d example.com
