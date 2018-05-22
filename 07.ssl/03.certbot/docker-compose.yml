@@ -8,7 +8,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./nginx/conf:/etc/nginx/conf:ro
-      - ./www:/var/www:ro
+      - ./var/www:/var/www:ro
       - ./certs/letsencrypt:/etc/letsencrypt:ro
       - /var/run/docker.sock:/tmp/docker.sock:ro
     ports:
@@ -20,6 +20,6 @@ services:
     image: certbot/certbot
     container_name: certbot
     volumes:
-      - ./certs/letsencrypt:/etc/letsencrypte
-      - ./www/letsencrypt:/var/www/.well-known
-    command: certonly --agree-tos --renew-by-default --email yuttasak@hot-now.com --webroot -w /var/www -d example.com
+      - ./certs/letsencrypt:/etc/letsencrypt:rw
+      - ./var/www/letsencrypt:/var/www/letsencrypt:rw
+    command: certonly --webroot --agree-tos --no-eff-email --email yuttasak@hot-now.com -w /var/www/letsencrypt -d example.com
